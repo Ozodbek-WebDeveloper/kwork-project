@@ -1,15 +1,16 @@
 <template>
-  <div>
-    <topNav/>
-
+  <div class="container mx-auto"  >
+    <topNav @search-updated="search = $event" />
+    <!-- <Test     /> -->
+    <RouterView :search="search" ></RouterView>
   </div>
 </template>
 <script>
-import test from "./components/test.vue";
+import Test from "./components/test.vue";
 import topNav from './components/top-nav.vue';
 export default {
   components: {
-    test,
+    Test,
     topNav
   },
   data() {
