@@ -1,14 +1,25 @@
 <template>
   <div>
-    <h1 class="text-4xl cursor-pointer"  >hello world</h1>
-    <h1 class="text-4xl cursor-pointer"  >hello world</h1>
+    <topNav/>
+
   </div>
 </template>
 <script>
+import test from "./components/test.vue";
+import topNav from './components/top-nav.vue';
 export default {
-  
+  components: {
+    test,
+    topNav
+  },
+  data() {
+    return {
+      search: '',
+    }
+  }
+
 }
 </script>
 <style lang="">
-  
+
 </style>
