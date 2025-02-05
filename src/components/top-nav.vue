@@ -1,8 +1,10 @@
 <template>
   <div class="top-nav flex w-full items-center justify-between ">
-    <div class="logo">
-      <h1>FFahka1</h1>
-    </div>
+    <router-link :to="{ name: 'home' }">
+      <div class="logo cursor-pointer">
+        <h1>FFahka1</h1>
+      </div>
+    </router-link>
     <!--  -->
     <v-card-title class="d-flex align-center pe-2 w-3xl ">  
       <v-text-field
@@ -30,9 +32,13 @@
       <span class="ml-2" > Добавить отзыв</span>
     </v-btn>
 
-    <v-btn  > 
+    <router-link :to="{name:'login'}" >
+
+      <v-btn  > 
       <span class="ml-2" > Войти</span>
     </v-btn>
+    </router-link>
+
   </div>
 </template>
 

@@ -17,7 +17,7 @@
             height="64"
             cover
           ></v-img>
-        </v-card>
+        </v-card> 
       </template>
 
       <template v-slot:item.rating="{ item }">
