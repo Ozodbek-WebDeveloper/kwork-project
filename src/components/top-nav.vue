@@ -2,7 +2,7 @@
   <div class="top-nav flex w-full items-center justify-between ">
     <router-link :to="{ name: 'home' }">
       <div class="logo cursor-pointer">
-        <h1>FFahka1</h1>
+        <h1>FFashka1</h1>
       </div>
     </router-link>
     <!--  -->
